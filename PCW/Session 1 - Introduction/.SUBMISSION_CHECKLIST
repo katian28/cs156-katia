@@ -1,0 +1,123 @@
+================================================================================
+CS156 SESSION 1 - PRE-CLASS WORK (PCW) SUBMISSION CHECKLIST
+================================================================================
+Student: Katia Gwaneza Nkurunziza
+Date: 9/9/26
+Status: ✅ COMPLETE (All 3 tiers)
+
+================================================================================
+BASE SECTION (1 point) ✅
+================================================================================
+[x] Administrative Setup
+    [x] Slack: #cs156-machine-learning
+    [x] Notion: Course collaborative document
+    [x] GitHub: Account created/verified
+    [x] LLM: ChatGPT/Claude access confirmed
+
+[x] Interviewing Robots
+    [x] Used NotebookLM for structured LLM conversation
+    [x] Discussed Murphy Chapter 1 in course context
+    [x] Asked follow-up questions about connections
+
+[x] Mind Map
+    [x] Comprehensive visualization created
+    [x] All required hashtags included:
+        #probability, #correlation, #significance,
+        #distributions, #dataviz, #sampling,
+        #induction, #regression, #variables, #algorithms
+    [x] Shows concept interconnections
+
+File: NotebookLM Mind Map (1).png ✓
+
+================================================================================
+CORE SECTION (1 point) ✅
+================================================================================
+[x] Script 1: Iris Dataset
+    [x] Load iris dataset (150 flowers, 3 species, 4 features)
+    [x] Filter to sepal length ≤ 5 cm (32 flowers remain)
+    [x] Create scatter plot: sepal vs petal length, color by species
+    [x] Add explanatory comments about biological concepts
+    [x] Code executes without errors ✓
+    [x] Produces visualization ✓
+
+[x] Script 2: MNIST Handwritten Digits
+    [x] Load MNIST dataset (70,000 images, 28×28 pixels = 784 features)
+    [x] Filter to keep only digits 3 and 8 (~13,000 images)
+    [x] Display 3×4 grid (12 examples) showing writing variation
+    [x] Add comments explaining image storage and visualization
+    [x] Code executes without errors ✓ (FIXED - now includes fallback)
+    [x] Produces visualization ✓
+
+Files: pcw_lesson_1.py ✓
+
+================================================================================
+EXTENSION SECTION (1 point) ✅
+================================================================================
+[x] Problem 1: Chance Guessing (Derangement)
+    [x] Part (a): Expected number of correct matches = 1 ✓
+    [x] Part (b): Probability of ≥1 match = 0.633 ✓
+    [x] Step-by-step working shown on paper ✓
+
+[x] Problem 2: Bayesian Calculations
+    [x] Part (i): P(Urn A | drew Red) = 2/3 ≈ 0.667 ✓
+    [x] Part (ii): P(2nd Red | 1st Red) ≈ 0.64 ✓
+    [x] Full Bayes rule derivation shown ✓
+    [x] Hand-written work with all calculations ✓
+
+Files: CS156-5.jpg, CS156-6.jpg ✓
+
+================================================================================
+REPOSITORY ORGANIZATION ✅
+================================================================================
+[x] PCW/Session 1 - Introduction/
+    [x] README.md - Session guide (UPDATED)
+    [x] SUBMISSION.md - Detailed assessment
+    [x] pcw_lesson_1.py - Working code (FIXED)
+    [x] NotebookLM Mind Map (1).png
+    [x] CS156-5.jpg, CS156-6.jpg
+
+[x] Root directory
+    [x] pyproject.toml - Dependencies configured
+    [x] .gitignore - Enhanced patterns
+    [x] SUBMISSION_SUMMARY.md - This review
+
+[x] Package structure
+    [x] src/cs156/__init__.py
+    [x] src/cs156/data.py
+    [x] src/cs156/plotting.py
+    [x] binder/requirements.txt
+    [x] .vscode/settings.json
+
+================================================================================
+VERIFICATION TESTS ✅
+================================================================================
+[x] Iris script: Load, filter, visualize ✓
+[x] MNIST script: Load (with fallback), filter, visualize ✓
+[x] Probability calculations: All correct ✓
+[x] Mind map: Comprehensive and complete ✓
+[x] Repository: Clean and organized ✓
+[x] Code comments: Clear and explanatory ✓
+[x] Mathematical rigor: Step-by-step solutions ✓
+
+================================================================================
+FINAL SCORE
+================================================================================
+Base:       1/1 point ✓
+Core:       1/1 point ✓
+Extension:  1/1 point ✓
+─────────────────────
+TOTAL:      3/3 points ✓
+
+Status: READY FOR SESSION 2 ✅
+
+================================================================================
+NEXT STEPS
+================================================================================
+[ ] Review README.md for session overview
+[ ] Run pcw_lesson_1.py to see visualizations
+[ ] Study SUBMISSION.md for detailed feedback
+[ ] Prepare for Session 2: Linear Algebra 1
+[ ] Watch 3Blue1Brown - Essence of Linear Algebra
+[ ] Read Murphy Chapter 2 (Linear Algebra)
+
+================================================================================

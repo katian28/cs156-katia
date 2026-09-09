@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(uv venv *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit: CS156 ML coursework setup with Session 1 PCW complete *)"
+    ]
+  }
+}
