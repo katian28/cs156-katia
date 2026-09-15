@@ -16,6 +16,41 @@ The key concepts:
 3. Multivariate regression finds the best-fitting hyperplane by minimizing squared residuals
 4. The normal equation solves for optimal parameters via linear algebra: β = (X^T X)^-1 X^T y
 
+## Before Class: Readings and Study Guide
+
+Work through these materials before starting the PCW. They build the conceptual foundation.
+
+### Murphy, K. P. (2022). Probabilistic Machine Learning
+
+Read these specific sections:
+- **Section 3.1**: Joint distributions for multiple random variables. This explains how variables relate to each other (covariance, correlation).
+- **Chapter 7, Sections 7.1 & 7.2**: Matrix algebra and matrix multiplication. Skip 7.2.5 and 7.2.6 (not needed yet). This is the core math.
+- **Chapter 7, Section 7.3.1**: More on matrices and transformations.
+
+**What to focus on**: Understand that matrices are geometric objects. Matrix multiplication is a linear transformation.
+
+### 3Blue1Brown (2016). Essence of Linear Algebra
+
+Watch the entire video series on YouTube: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+
+**Essential videos for this session**:
+- Vectors, what even are they?
+- Linear combinations, span, and basis vectors
+- Linear transformations and matrices
+- Matrix multiplication as composition
+- Determinants
+- Inverse matrices
+
+**Why**: These videos make the geometry intuitive. You'll see why matrix multiplication represents rotation/scaling/projection.
+
+### StatQuest (Josh Starmer). Multiple Regression, Clearly Explained
+
+Watch: https://www.youtube.com/watch?v=dQNpSa-bq4A
+
+**What it covers**: How to fit a regression model with multiple variables, interpret coefficients, check if the model is good.
+
+---
+
 ## Learning Objectives
 
 - Understand vector spaces and how matrices represent them
