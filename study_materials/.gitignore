@@ -1,0 +1,51 @@
+# Study materials - keep local, don't commit
+
+# PDFs and ebooks
+*.pdf
+*.epub
+*.mobi
+
+# Videos
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+
+# Audio
+*.mp3
+*.wav
+*.m4a
+
+# Notes (if text-based)
+*.txt
+notes/
+*_notes/
+
+# Downloaded resources
+downloads/
+resources/
+*_resources/
+
+# Large datasets
+data/
+*.csv
+*.xlsx
+*.xls
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
+__pycache__/
+.pytest_cache/
