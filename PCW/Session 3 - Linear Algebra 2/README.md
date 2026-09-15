@@ -20,6 +20,8 @@ The key concepts:
 
 Work through these materials before starting the PCW. They build the conceptual foundation.
 
+**See also**: Study notes are in `study_materials/session_3_study_notes.md` for deeper conceptual explanation.
+
 ### Murphy, K. P. (2022). Probabilistic Machine Learning
 
 Read these specific sections:

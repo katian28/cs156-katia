@@ -4,7 +4,17 @@
       "Bash(python3 *)",
       "Bash(uv venv *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'Initial commit: CS156 ML coursework setup with Session 1 PCW complete *)"
+      "Bash(git commit -m 'Initial commit: CS156 ML coursework setup with Session 1 PCW complete *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git checkout *)",
+      "Bash(git commit *)",
+      "Bash(curl -s https://raw.githubusercontent.com/ayghri/i-have-adhd/main/README.md)",
+      "Bash(pdftotext \"/Users/katiankurunzizagwaneza/workspace/github.com/katian28/cs156-katia/course_materials/cs156-syllabus.pdf\" -)",
+      "Bash(brew install *)",
+      "Bash(pdftotext \"/Users/katiankurunzizagwaneza/Downloads/PreClassWork 3.pdf\" -)"
     ]
   }
 }
