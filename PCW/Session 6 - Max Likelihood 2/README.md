@@ -20,7 +20,7 @@ The PCW's own starter code for `log_likelihood_per_point` used `if y is True:`. 
 - Understand logistic regression as fitting a Bernoulli (coin-flip) probability per observation
 - Derive the likelihood and log-likelihood for logistic regression by analogy to repeated coin flips
 - Compute and compare log-likelihoods to judge which of two wrong parameter guesses is "more wrong"
-- Compute gradients of the log-likelihood with JAX, and understand what they do and don't tell you
+- Compute gradients of the log-likelihood from a closed-form derivative, and understand what they do and don't tell you
 
 ## Results Summary
 
@@ -51,7 +51,7 @@ Derives the likelihood and log-likelihood for logistic regression from the coin-
 - Code Cell 3: implements `log_likelihood_per_point` and `total_log_likelihood`, compares Aishwarya's and Irhum's guesses. **Aishwarya is more wrong.**
 
 ### Extension: Gradient
-- Code Cell 4: uses JAX's `jax.grad` to compute the exact gradient of the log-likelihood with respect to both parameters, vectorized (no Python for-loop), commented line by line
+- Code Cell 4: closed-form gradient of the log-likelihood, `d(LL)/d(beta) = sum((y - sigma(z)))` weighted by 1 or x, the same derivative structure as Session 2's from-scratch logistic regression, vectorized (no Python for-loop), commented line by line. The PCW allowed any library including JAX, but since Session 2 already covered this derivative by hand, no new library was needed.
 - Interpretation flags a subtlety: the gradient at Aishwarya's guess points toward *increasing* beta_0, even though the true beta_0 is much lower, gradient ascent only gives the locally steepest direction, not a straight line to the true optimum
 
 ## Key Concepts
@@ -76,7 +76,7 @@ ln L(beta_0, beta_1) = sum over all i of:
 Multiplying 1000+ probabilities (each less than 1) underflows to numerically indistinguishable-from-zero very fast. Taking logs turns the product into a sum, avoiding underflow, and since log is monotonic, the parameters that maximize likelihood also maximize log-likelihood.
 
 ### Gradient as Local Direction, Not a Compass to the Truth
-`jax.grad` computes the exact local slope of the log-likelihood surface at a given point. It tells you which way to nudge parameters to locally increase log-likelihood right now, not the direction of the true, possibly far-away, optimum. Repeated small steps (gradient ascent) eventually get there; a single gradient does not point straight at the answer.
+The closed-form gradient gives the exact local slope of the log-likelihood surface at a given point. It tells you which way to nudge parameters to locally increase log-likelihood right now, not the direction of the true, possibly far-away, optimum. Repeated small steps (gradient ascent) eventually get there; a single gradient does not point straight at the answer.
 
 ## Files
 
@@ -92,7 +92,7 @@ PCW/Session 6 - Max Likelihood 2/
 cd "PCW/Session 6 - Max Likelihood 2"
 jupyter notebook pcw_lesson_6.ipynb
 ```
-Run all cells top to bottom. Requires `jax[cpu]` installed (`pip install "jax[cpu]"`).
+Run all cells top to bottom. No extra dependencies beyond numpy, pandas, matplotlib, sklearn (already in `pyproject.toml`).
 
 ## Next Steps
 

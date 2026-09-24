@@ -83,7 +83,7 @@ The Shafkat reading's core point (in the "Suppose we receive... variance in the 
 
 ## Core Concept 5: Gradients Point Locally, Not Globally
 
-Once you have a log-likelihood function, MLE becomes an optimization problem: find the parameters that maximize it. One standard tool is the **gradient**, computed automatically here with JAX's `jax.grad`.
+Once you have a log-likelihood function, MLE becomes an optimization problem: find the parameters that maximize it. One standard tool is the **gradient**, computed here with the same closed-form derivative from Session 2's from-scratch logistic regression, no new library needed.
 
 **What a gradient actually tells you**: at your *current* parameter guess, which direction increases the log-likelihood fastest, and by roughly how much, per unit step. It says nothing directly about where the true global maximum is.
 
