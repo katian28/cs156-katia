@@ -78,10 +78,8 @@ Keep this visible in your response when switching tasks.
 
 ## Git Workflow
 
-- Never commit/push without explicit permission
-- Before committing, say exactly what will be committed
-- Ask: "Ready for me to commit and push?"
-- Wait for approval
+- Default: never commit/push without explicit permission. Before committing, say exactly what will be committed. Ask: "Ready for me to commit and push?" Wait for approval.
+- **Exception**: when generating a class workbook/forum entry for a session, commit and push that session's work automatically at the same time, no separate approval needed. By the time workbook content is being written, the underlying notebook/README has already been reviewed and approved in the conversation. State what was pushed after the fact, don't ask first.
 
 ## Reference
 

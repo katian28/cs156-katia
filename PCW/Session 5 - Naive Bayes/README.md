@@ -16,6 +16,24 @@ The original PCW's dataset URL (`milindsoorya/SpamClassifier-in-python`) returns
 
 The ham/spam counts differ slightly from the PCW's stated "615 spam and 4957 ham" (this mirror has 747 spam and 4825 ham, same total of 5572 rows), likely a different dedup pass of the same underlying UCI SMS Spam Collection dataset. All numbers in this notebook use the actual counts from the mirror I used.
 
+## Before Class: Readings and Study Guide
+
+Work through these before starting the PCW. See also `study_materials/session_5_study_notes.md` for deeper explanation.
+
+### Starmer, J. (2020). *Naive Bayes, Clearly Explained!!!* (StatQuest)
+
+Covers Naive Bayes with multiple, discrete classes. Focus specifically on the **smoothing term** (Laplace / additive smoothing) added near the end, this exists to prevent multiplying by a zero probability when a word never appeared in a class during training.
+
+### Starmer, J. (2020). *Gaussian Naive Bayes, Clearly Explained!!!* (StatQuest)
+
+Covers the variant of Naive Bayes used for **continuous** features (not word counts). Instead of counting word frequencies per class, it fits a normal (Gaussian) distribution to each feature within each class, then uses that distribution's probability density as the likelihood term.
+
+### VanderPlas, J. (2016). *In Depth: Naive Bayes Classification*
+
+From the Python Data Science Handbook. Walks through Gaussian, Multinomial, and other Naive Bayes variants with runnable code, and discusses when each variant is appropriate based on the feature type (continuous vs. count vs. binary).
+
+**Why all three matter for this PCW**: the SMS classifier in this notebook uses `MultinomialNB` (word counts / TF-IDF, discrete-ish features). The Starmer Gaussian video and VanderPlas reading explain the sibling approach for continuous features, useful context for why sklearn has multiple `naive_bayes` classes (`GaussianNB`, `MultinomialNB`, `BernoulliNB`) and how to pick the right one for a given dataset.
+
 ## Learning Objectives
 
 - Understand what makes Naive Bayes "naive" (conditional independence assumption)
