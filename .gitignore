@@ -27,6 +27,9 @@ outputs/
 *.pkl
 *.pickle
 
+# Personal photos (Assignment 1) - code/results get committed, raw photos don't
+Assignments/*/food_photos/
+
 # IDE
 .vscode/
 .idea/
