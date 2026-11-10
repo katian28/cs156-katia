@@ -4,9 +4,8 @@
 
 Question 1 (LLM dialog on nonlinear dimensionality reduction vs. PCA) was done directly in the
 live workbook. The Core Question (autoencoding handwritten digits, 64-dim -> 2-dim bottleneck
--> 64-dim reconstruction) and Questions 2a-4 all run end to end in the notebook, zero errors,
-every quoted number from real executed output. Extension Question (3-layer encoder/decoder) is
-pending, template cells are in place, to be filled in next.
+-> 64-dim reconstruction), Questions 2a-4, and the Extension Question (3-layer encoder/decoder)
+all run end to end in the notebook, zero errors, every quoted number from real executed output.
 
 ## Question 2a
 
@@ -37,12 +36,14 @@ classes = **3.80**, nearly double. The clustering is a side effect of reconstruc
 correlating with visual similarity, which correlates with digit label, not the model learning
 classes directly.
 
-## Extension Question: A better autoencoder (pending)
+## Extension Question: A better autoencoder
 
-Template cells are in the notebook (empty, matching the workbook's blank state). Plan:
-extend the encoder and decoder from 2 layers to 3 layers each (add one more 8-dim hidden layer
-on each side), retrain for the same 3000 steps, and compare final loss to the 2-layer
-baseline's 0.378.
+Extended the encoder from 2 layers to 3 (`layer_1`, `layer_2`, `layer_2b`) and the decoder from
+2 layers to 3 (`layer_4`, `layer_4b`, `layer_5`), same hidden width (8), same 2-dim bottleneck,
+retrained for the same 3000 steps. Verified final loss: **3-layer = 0.368**, **2-layer baseline
+= 0.378**. Modest improvement (~2.6% lower loss), extra depth gives a bit more capacity to
+shape the mapping into/out of the bottleneck, but doesn't fundamentally change what a
+2-dimensional bottleneck can retain.
 
 ## Super Extension Question: teacher forcing (optional, not attempted)
 
